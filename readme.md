@@ -35,9 +35,13 @@ sudo curl https://install.meteor.com/ | sh
 2) Go into folder with application repository. In case if you cloned repo into home directory (`cd ~`) you should go into:
   `cd ~/application-name`
 
-3) Run Meteor app with command:
+3) Run Meteor app with command (```sudo``` may be required):
 ```
 meteor
+```
+In case there is a message 'Can't listen on port 3000. Perhaps another Meteor is running?' - run meteor on the another port (```sudo``` may be required):
+```
+meteor -p 2000
 ```
 If app was started successfully you will see next output:
 ```
